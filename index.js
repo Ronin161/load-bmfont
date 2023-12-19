@@ -8,6 +8,7 @@ var readBinary = require('parse-bmfont-binary')
 var mime = require('mime')
 var noop = function() {}
 var isBinary = require('./lib/is-binary')
+var Buffer = require('buffer/').Buffer;
 
 function parseFont(file, data, cb) {
   var result, binary

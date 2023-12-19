@@ -5,6 +5,7 @@ var parseXML = require('parse-bmfont-xml')
 var readBinary = require('parse-bmfont-binary')
 var isBinaryFormat = require('./lib/is-binary')
 var xtend = require('xtend')
+var Buffer = require('buffer/').Buffer;
 
 var xml2 = (function hasXML2() {
   return self.XMLHttpRequest && "withCredentials" in new XMLHttpRequest
